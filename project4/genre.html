@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Tahjdriana Johnson">
+<meta name="description" content="Explore movie recommendations based on genre.">
+<meta name="keywords" content="movies, movie recommendations, genres, horror movies, romance movies, streaming, upcoming movies">
+<meta name="copyright" content="Copyright 2026 Tahjdriana Johnson">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/e0e7a6cee0.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>SceneScreen | Genre</title>
+</head>
+<body>
+  <header>
+    <p>Sign-in | Add to Watchlist</p>
+
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="site-name">SceneScreen</li>
+        <li><a href="home.html">HOME</a></li>
+        <li class="dropdown">
+          <a href="mood.html" class="dropbtn">MOOD</a>
+          <ul class="dropdown-content">
+            <li><a href="heartbroken.html">Heartbroken</a></li>
+            <li><a href="bossy.html">Bossy</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="genre.html" class="dropbtn">GENRE</a>
+          <ul class="dropdown-content">
+            <li><a href="horror.html">Horror</a></li>
+            <li><a href="romance.html">Romance</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li class="search-container">
+        <form action="https://duckduckgo.com/" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Search..." autocomplete="off" required>
+        <button type="submit">Search</button>
+        </form>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>GENRE</h1>
+
+  <main class="page-layout">
+
+    <aside class="sidebar">
+      <h2>Filter</h2>
+
+    <fieldset name="Filter" class="fieldset fieldset--checkbox">
+
+      <div class="fieldset__input">
+        <input type="checkbox" id="checkbox1" name="checkbox1"><label for="checkbox1">Horror</label>
+      </div>
+
+      <div class="fieldset__input">
+        <input type="checkbox" id="checkbox2" name="checkbox2"><label for="checkbox2">Romance</label>
+      </div>
+
+      <div class="filters__submit">
+        <input type="submit" value="Submit">
+      </div>
+    </fieldset>
+  </aside>
+
+<div class="content">
+
+  <section class="cat-intro">
+    <h2>Find the perfect movie by browsing via genre! We have so many fantastic categories. Try clicking the different categories below. If you have any further suggestions provide them in the form below:</h2>
+  </section>
+
+  <!-- Category boxes-->
+  <div class="cat-boxes">
+
+  <div class="cat-box">
+    Horror
+  </div>
+
+  <div class="cat-box">
+    Romance
+  </div>
+
+  <div class="cat-box">
+    Family
+  </div>
+
+  <div class="cat-box">
+    Comedy
+  </div>
+
+  <div class="cat-box">
+    Mystery
+  </div>
+
+  <div class="cat-box">
+    Drama
+  </div>
+
+</div>
+<!-- Category Boxes ends-->
+<!--Form-->
+
+<form class="rec-form" id="recommendationform" action="mailto:tjohnson566@student.umgc.edu" method="post" enctype="text/plain" onsubmit="return validateForm()">
+
+  <fieldset>
+    <legend>Recommendation Form</legend>
+
+    <label class="required" for="name">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter name here" required tabindex="1"><br><br>
+
+    <label for="rectype">Choose your recommendation type</label>
+    <select name="rectype" id="rectype" tabindex="2">
+      <option value="movie">Movie</option>
+      <option value="category">Category</option>
+      <option value="other">Other</option>
+    </select>
+
+    <br><br>
+
+    <p>How old are you?</p>
+
+    <input type="radio" id="under17" name="age" value="under17" tabindex="3">
+    <label for="under17">17 or Younger</label><br>
+
+    <input type="radio" id="18-29" name="age" value="18-29" tabindex="4">
+    <label for="18-29">18-29</label><br>
+
+    <input type="radio" id="30-50" name="age" value="30-50" tabindex="5">
+    <label for="30-50">30-50</label><br>
+
+    <input type="radio" id="over51" name="age" value="over51" tabindex="6">
+    <label for="over51">51 or older</label><br><br>
+
+
+    <p>What genres do you typically watch?</p>
+
+    <input type="checkbox" id="horror" name="genre" value="horror" tabindex="7">
+    <label for="horror">Horror</label><br>
+
+    <input type="checkbox" id="romance" name="genre" value="romance" tabindex="8">
+    <label for="romance">Romance</label><br>
+
+    <input type="checkbox" id="family" name="genre" value="family" tabindex="9">
+    <label for="family">Family</label><br>
+
+    <input type="checkbox" id="comedy" name="genre" value="comedy" tabindex="10">
+    <label for="comedy">Comedy</label><br>
+
+    <input type="checkbox" id="mystery" name="genre" value="mystery" tabindex="11">
+    <label for="mystery">Mystery</label><br>
+
+    <input type="checkbox" id="drama" name="genre" value="drama" tabindex="12">
+    <label for="drama">Drama</label><br><br>
+
+
+    <label class="required" for="comments">Movie/Category Suggestions</label><br>
+
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Tell us what you would like to see added to the site" required tabindex="13"></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Submit" tabindex="14">
+
+  </fieldset>
+
+</form>
+<!--End of form-->
+</div>
+
+
+
+
+
+</main>
+<footer>Tahjdriana Johnson. CMST 386 | <a href="privacypolicy.html">Privacy Policy</a><p id="date"></p></footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

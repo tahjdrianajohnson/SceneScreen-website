@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Tahjdriana Johnson">
+<meta name="description" content="See our recommendation of this horror classic.">
+<meta name="keywords" content="movies, movie recommendations, genres, horror movies, alien, streaming, upcoming movies">
+<meta name="copyright" content="Copyright 2026 Tahjdriana Johnson">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/e0e7a6cee0.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>SceneScreen | Alien</title>
+</head>
+<body>
+  <header>
+    <p>Sign-in | Add to Watchlist</p>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="site-name">SceneScreen</li>
+        <li><a href="home.html">HOME</a></li>
+        <li class="dropdown">
+          <a href="mood.html" class="dropbtn">MOOD</a>
+          <ul class="dropdown-content">
+            <li><a href="heartbroken.html">Heartbroken</a></li>
+            <li><a href="bossy.html">Bossy</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="genre.html" class="dropbtn">GENRE</a>
+          <ul class="dropdown-content">
+            <li><a href="horror.html">Horror</a></li>
+            <li><a href="romance.html">Romance</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li class="search-container">
+        <form action="https://duckduckgo.com/" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Search..." autocomplete="off" required>
+        <button type="submit">Search</button>
+        </form>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Alien</h1>
+
+  <main class="page-layout">
+
+<!--Filter -->
+    <aside class="sidebar">
+      <h2 class="filter">Filter</h2>
+
+    <fieldset name="Filter" class="fieldset fieldset--checkbox">
+
+      <div class="fieldset__input">
+        <input type="checkbox" id="checkbox1" name="checkbox1"><label for="checkbox1">Heartbroken</label>
+      </div>
+
+      <div class="fieldset__input">
+        <input type="checkbox" id="checkbox2" name="checkbox2"><label for="checkbox2">Bossy</label>
+      </div>
+
+      <div class="filters__submit">
+        <input type="submit" value="Submit">
+      </div>
+    </fieldset>
+  </aside>
+  <!--Filter ends-->
+
+
+  <!-- Movie content-->
+
+<section class="content">
+
+  <div class="movie-img">
+    <img src="images/alien.jpg" alt="Movie Poster for Alien">
+
+    <div class="movie-des">
+      <h2>Alien</h2>
+      <p>A suspenseful sci-fi horror movie about a crew traveling through space who encounter a dangerous creature that turns their mission into a fight for survival. The movie creates a feeling of fear and tension while showing how people react when they are faced with something they cannot control.</p>
+      <p>Where to Watch: Netflix, Prime Video, Max, Hulu</p>
+      <p>Rating: 4/5</p>
+      <p>Add to Watchlist</p>
+    </div>
+  </div>
+
+
+</section>
+<!--Movie content ends-->
+
+</main>
+<footer>Tahjdriana Johnson. CMST 386 | <a href="privacypolicy.html">Privacy Policy</a><p id="date"></p></footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
